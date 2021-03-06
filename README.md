@@ -25,9 +25,9 @@ com.prueba.myhotel.empresa.controller   - EmpresaController   (Maneja la base de
 -----------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------
 
-1.- Se crea clase controladora, Siendo un CRUD completo que trabajaria con una lista. Sobre cada vehiculo se le pueden añadir mantenimientos a travez del endpoint descrito. (com.prueba.myhotel.vehiculos.controller)
+1.- Se crea clase controladora, Siendo un CRUD completo que trabajaria con una lista. Sobre cada vehiculo se le pueden aÃ±adir mantenimientos a traves del endpoint descrito. (com.prueba.myhotel.vehiculos.controller)
 
-Ejemplo de vehiculo (Auto a añadir) Generado para probar desde postman
+Ejemplo de vehiculo (Auto a aÃ±adir) Generado para probar desde postman
 
 {
     "tipo": "mini",
@@ -37,7 +37,7 @@ Ejemplo de vehiculo (Auto a añadir) Generado para probar desde postman
     "marca": "chevrolet",
     "modelo": "astra",
     "patente": "ABC123",
-    "año": "1999",
+    "aÃ±o": "1999",
     "kilometraje": 1000,
     "cilindrada": 100,
     "mantenimientos": [
@@ -49,7 +49,7 @@ Ejemplo de vehiculo (Auto a añadir) Generado para probar desde postman
 }
 Endpoints: 
 	localhost:8080/vehiculo/{id} -> Endpoint GET para obtener  vehiculo de id en particular
-	localhost:8080/add/vehiculo  -> Endpoint POST para Almacenar  vehiculo se retorna mensaje descriptivo, en caso de añadir JPA se puede devolver id 
+	localhost:8080/add/vehiculo  -> Endpoint POST para Almacenar  vehiculo se retorna mensaje descriptivo, en caso de aÃ±adir JPA se puede devolver id 
 	localhost:8080/eliminar/{id} -> Endpoint DELETE para obtener id de vehiculo en particular
 	localhost:8080/update/vehiculo/{id}	-> Endpoint POST para actualizar vehiculo en particular dado su ID
 	localhost:8080/listar/vehiculos -> Endpoint GET para actualizar vehiculo en particular dado su ID
@@ -60,7 +60,7 @@ Endpoints:
 -----------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------
 
-2.- Para la parte SQL se me dificultó un poco dado que no he estado muy activo creando consultas. 
+2.- Para la parte SQL se me dificultÃ³ un poco dado que no he estado muy activo creando consultas. 
 
 
 Adjunto Schema para instalacion de Base de datos en caso de no funcionar el levantamiento de estas por JPA. Posterior a este se adjunta consultas SQL para cada caso mencionado
@@ -230,6 +230,7 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+CONSULTAS EJERCICIO 2
 
 i )
 SELECT COUNT(*) FROM EMPLOYEES WHERE SALARY < 3500 OK
@@ -258,7 +259,7 @@ SELECT AVG(SALARY) FROM EMPLOYEES e , Departments d WHERE e.department in (SELEC
 
 vi) 
 
-SELECT COUNT(*) AVG(SALARY), MAX(SALARY) Salario_maximo, MIN(SALARY) salario_minimo, promedio_años 
+SELECT COUNT(*) AVG(SALARY), MAX(SALARY) Salario_maximo, MIN(SALARY) salario_minimo, promedio_aÃ±os 
 SELECT brand_name, MAX(list_price) max_list_price FROM EMPLOYEES e,
 GROUP BY country_name (MALA)
 
